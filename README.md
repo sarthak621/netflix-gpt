@@ -2,6 +2,9 @@
 
 -create react app
 -configured the tailwind css
+- header
+- login form
+-Sign up form
 
 
 # planning 
@@ -20,6 +23,3 @@
  - search bar
  - movie suggestions 
 
- git remote add origin https://github.com/sarthak621/netflix-gpt.git
-git branch -M main
-git push -u origin main
