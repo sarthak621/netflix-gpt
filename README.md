@@ -28,6 +28,16 @@
  - update store with trailer video data
  - embedded the youtube videp and make it autoplay and mute
  - tailwind classes to make main container awesome 
+ - build secondary components
+ - build movie lists
+ - build movie card
+ - tmdb image cdn url
+ - make the browse page amazing with tailwind css
+ - usePopularMovies custom hook { exactly as useNowPlayingMovies custom hook}
+ - GPT search page
+ - gpt search bar
+ - adding multi langauge feature
+ - intergrate gpt api's {get openAI key}
 
 # planning 
 - Login / signup page
