@@ -22,7 +22,7 @@ const useMoviesTrailer=(movieID)=>{
    }
    
    useEffect(()=>{
-    !trailerVideo && getMovieVideos()
+     !trailerVideo && getMovieVideos()
    },[])
 }
 

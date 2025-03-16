@@ -19,7 +19,10 @@ const useNowPlayingMovies=()=>{
  }
 
  useEffect(()=>{
-   if (!nowPlayingMovies) getNowPlayingMovies()
+  //it will going to save to call api's again and again after rendering
+  if (nowPlayingMovies.length === 0) { // ✅ Correct check
+    getNowPlayingMovies();
+  }
 
 
  },[])

@@ -12,7 +12,7 @@ import { useSelector } from 'react-redux';
 
 const Browse = () => {
   
-  const showGptSearch=useSelector(store=>store.gpt.showGptSearch)
+  const showGptSearch=useSelector(store=>store.gpt.showGptSearch) 
 
  //calling the custom hook
  useNowPlayingMovies();
@@ -29,6 +29,7 @@ const Browse = () => {
       {
         showGptSearch?<GptSearch/> :
         <>
+        
         <MainContainer/>
         <SecondaryContainer/>
         </>

@@ -20,7 +20,9 @@ const usePopularMovies=()=>{
  }
 
  useEffect(()=>{
-   !popularMovies && getPopularMovies()
+  if (popularMovies.length === 0) { // ✅ Correct check
+    getPopularMovies();
+  }
 
  },[])
 }
