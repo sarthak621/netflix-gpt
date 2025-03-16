@@ -38,6 +38,15 @@
  - gpt search bar
  - adding multi langauge feature
  - intergrate gpt api's {get openAI key}
+ - get gemini api key
+ - get search api call
+ - fetch gpt movie suggestions from tmdb
+ - created gptSlice added data
+ - reused movie list component to make movie suggestion container
+ - memoization
+ - added .env file
+ - addling env file to git ignore
+ - made our site responsive
 
 # planning 
 - Login / signup page
