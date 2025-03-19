@@ -23,7 +23,7 @@ const GptSearchBar = () => {
   }
 
   const handleGptSearchKey = async () => {
-    console.log(searchText.current.value);
+    // console.log(searchText.current.value);
 
     const gptQuery = `Act as a Movie Recommendation system and suggest some movies for the query: ${searchText.current.value}. 
                       Only give me names of 5 movies, comma-separated like the example result given ahead. 
@@ -35,10 +35,10 @@ const GptSearchBar = () => {
       const response = await model.generateContent(gptQuery);
       const gptResults = await response.response.text();
 
-      console.log( gptResults);
+      // console.log( gptResults);
 
       const gptMovies=gptResults.split(",") //gives array of movies
-      console.log(gptMovies)
+      // console.log(gptMovies)
 
       //for each movie i will search tmdb api
 
@@ -46,7 +46,7 @@ const GptSearchBar = () => {
      //[Promise,Promise,Promise,Promise,Promise]
 
      const tmdbResults=await Promise.all(promiseArray)  //resolves all the promises and get us the result
-     console.log(tmdbResults)
+    //  console.log(tmdbResults)
 
      dispatch(addGptMovieResult({movieNames:gptMovies
       ,movieResults:tmdbResults}))
